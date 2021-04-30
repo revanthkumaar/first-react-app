@@ -11,6 +11,7 @@ function App() {
     <Route exact path="/" component={HomePage}/> 
     <Route path="/signin" component={SignInPage}/>
     <Route path="/profile-page" component={ProfilePage}/>
+    
     </div>
   );
 }
