@@ -1,4 +1,5 @@
 import React from 'react';
+import './homepage.styles.scss'
 
 const HomePage = () => (
     <div className="homePageComp">
@@ -41,7 +42,7 @@ const HomePage = () => (
                     <span className="description"></span>
                     </div>
             </div>
-            
+
         </div>
     </div>
 )
