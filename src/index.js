@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 //add routing functionality 
 import {BrowserRouter} from 'react-router-dom'
 
+
 //redux
 import {Provider} from 'react-redux'
+import configureStore from "store"
 
 ReactDOM.render(
-  <Provider>  
+  <Provider store={configureStore()}>  
   <BrowserRouter>
     <App />
   </BrowserRouter>
