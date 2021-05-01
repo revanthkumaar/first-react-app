@@ -5,15 +5,26 @@ import { Route } from 'react-router-dom'
 import SignInPage from './pages/signin-page/signin-page.component'
 import ProfilePage from './pages/profile-page/profile-page.component'
 
+//redux connectors and actions
+import {connect} from "react-redux";
+import {startAction} from "actions/startAction";
+import {stopAction} from "actions/stopAction";
+
 function App() {
   return (
-    <div className="mainApp">
-    <Route exact path="/" component={HomePage}/> 
-    <Route path="/signin" component={SignInPage}/>
-    <Route path="/profile-page" component={ProfilePage}/>
+
+    <img
+    src={logo}
+    className={
+      "App-logo"+(this.props.rotate ? "":"App-logo-paused")
+    }
+    onClick={this.props.rotate ? this.props.stopAction : this.props.startAction}
+
+    />
     
-    </div>
   );
 }
-export default App;
+
+
+export default connect()(App);
 
