@@ -9,39 +9,7 @@ class Directory extends React.Component{
 
         super();
 
-        this.state = {
-            
-            sections: [
-                {
-                    title:'kumar',
-                    id:1,
-                    subtitle:'lives in bangalore'
-                },
-                {
-                    title:'revanth',
-                    id:2,
-                    subtitle:'lives in bangalore'
-                },
-                {
-                    title:'rohan',
-                    id:3,
-                    subtitle:'lives in bangalore'
-                },
-                {
-                    title:'roshan',
-                    id:4,
-                    subtitle:'lives in bangalore'
-                },
-                {
-                    title:'roshanrohan',
-                    id:5,
-                    subtitle:'lives in bangalore'
-                }
-
-            ],
-
-        }
-
+       
        
 
     }
